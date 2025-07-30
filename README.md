@@ -1,6 +1,6 @@
 # Juridisk AI - Din juridiske assistent
 
-En moderne chat-applikation bygget med Next.js, der giver dig adgang til juridisk AI-assistance. Applikationen er designet med et moderne og intuitivt interface, der minder om ChatGPT og Gemini.
+En moderne chat-applikation bygget med Next.js, der giver dig adgang til juridisk AI-assistance. Applikationen er designet med et moderne og intuitivt interface. 
 
 ## 🚀 Funktioner
 
@@ -165,7 +165,3 @@ Applikationen er klar til deployment på Vercel:
 ## 📄 License
 
 Dette projekt er under MIT License - se [LICENSE](LICENSE) filen for detaljer.
-
-## 🙏 Tak
-
-Tak til alle der har bidraget til dette projekt og hjulpet med at skabe en moderne og brugervenlig juridisk AI-assistent!
