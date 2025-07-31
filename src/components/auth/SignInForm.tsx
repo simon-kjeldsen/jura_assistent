@@ -30,7 +30,8 @@ export default function SignInForm() {
                 router.push('/');
                 router.refresh();
             }
-        } catch (error) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (_) {
             setError('Der opstod en fejl. Prøv igen.');
         } finally {
             setIsLoading(false);

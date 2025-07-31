@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
         // Tilføjelse af samtalehistorik hvis den findes
         if (conversationHistory && conversationHistory.length > 0) {
             prompt += `Tidligere samtale:\n`;
-            conversationHistory.forEach((msg: any) => {
+            conversationHistory.forEach((msg: { isUser: boolean; text: string }) => {
                 prompt += `${msg.isUser ? 'Bruger' : 'AI'}: ${msg.text}\n`;
             });
             prompt += `\nNuværende spørgsmål: ${text}\n\nSvar:`;

@@ -46,7 +46,7 @@ export async function POST(
         }
 
         // Create new messages
-        const messagesToInsert = messages.map((msg: any, index: number) => ({
+        const messagesToInsert = messages.map((msg: { text: string; isUser: boolean }, index: number) => ({
             chatId: chatId,
             content: msg.text,
             isUser: msg.isUser,

@@ -4,7 +4,8 @@ import { authOptions } from '@/lib/auth';
 import { supabase } from '@/lib/supabase';
 
 // GET /api/chats - Get user's chats
-export async function GET(request: NextRequest) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export async function GET(_: NextRequest) {
     try {
         const session = await getServerSession(authOptions);
 

@@ -187,10 +187,10 @@ export default function ChatApp() {
         }
     };
 
-    const handleClear = () => {
-        setMessages([]);
-        setCurrentChatId(undefined);
-    };
+    // const handleClear = () => {
+    //     setMessages([]);
+    //     setCurrentChatId(undefined);
+    // };
 
     const handleNewChat = () => {
         setMessages([]);
@@ -204,7 +204,7 @@ export default function ChatApp() {
             const response = await fetch(`/api/chats/${chatId}`);
             if (response.ok) {
                 const data = await response.json();
-                const chatMessages = data.chat.messages.map((msg: any) => ({
+                const chatMessages = data.chat.messages.map((msg: { id: string; content: string; isUser: boolean; createdAt: string }) => ({
                     id: msg.id,
                     text: msg.content,
                     isUser: msg.isUser,

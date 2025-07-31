@@ -45,7 +45,8 @@ export default function SignUpForm() {
                 // Redirect to sign in page after successful registration
                 router.push('/auth/signin?message=Konto oprettet succesfuldt');
             }
-        } catch (error) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (_) {
             setError('Der opstod en fejl. Prøv igen.');
         } finally {
             setIsLoading(false);
