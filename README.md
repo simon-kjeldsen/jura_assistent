@@ -161,7 +161,3 @@ Applikationen er klar til deployment på Vercel:
 3. Commit dine ændringer (`git commit -m 'Add some AmazingFeature'`)
 4. Push til branch (`git push origin feature/AmazingFeature`)
 5. Opret en Pull Request
-
-## 📄 License
-
-Dette projekt er under MIT License - se [LICENSE](LICENSE) filen for detaljer.
